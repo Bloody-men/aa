@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>购买广告</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="public.css">
+</head>
+<body>
+<main class="products">
+	<a  class="button_left" href=""><img src="Return.png" style="width: 30%;margin: 2px;">返回</a>
+	<a class="button_right" href="">我的广告</a>
+	<h1>广告购买</h1>
+	<div class="wrap">
+		<p>1 : 广告显示页面</p>
+	    <div class="label_box">
+	        <label>
+	            <input type="radio" name="sex">
+	            <div>首页</div>
+	        </label>
+	        <label>
+	            <input type="radio" name="sex">
+	            <div>选手页</div>
+	         </label>
+	         <label>
+	            <input type="radio" name="sex">
+	            <div>提示页</div>
+	         </label>
+	    </div>
+	</div>
+	<div class="wrap">
+	    <p>2 : 上传广告图片</p>
+		<div id="imgPreview">
+		    <div id="prompt">
+				<input type="file" id="file" class="filepath" onchange="changepic(this)" accept="image/*">     
+			</div>
+		    <img src="#" id="img">
+		</div>
+	</div>
+	<div class="wrap">
+		<p>3 : 联系方式</p>
+		<div class="friendlink" style="text-align: center;">
+			
+			 <div class="label_box joinus">
+		        <label>
+		            <input type="radio" name="sex1">
+		            <div class="Telephone">打电话</div>
+		        </label>
+		        <label>
+		            <input type="radio" name="sex1">
+		            <div class="linck">放链接</div>
+		         </label>
+		    </div>
+		    <input type="text" name="bbj" placeholder="请输入电话号码" pattern="[0-9]{3}" class="index_information Telephone1">
+		    <input type="text" name="bbj" placeholder="请输入网址：例如：www.hdk.net" pattern="[0-9]{3}" class="index_information linck1">
+		</div>
+	</div>
+	<div class="wrap">
+	    <p>4 : 广告时间</p>
+		<div class="date">
+			<input readonly class="form-control" type="text" id="date-group1-2" placeholder="开始时间 2019-1-1"> &nbsp 至 &nbsp <input readonly class="form-control" type="text" id="date-group1-3" placeholder="结束时间 2019-1-1">
+		</div>
+	</div>
+	<p>广告费: <span style="color: red;font-weight: 600;"> 100元</span></p>
+	<a href="Success.html"><button class="index_button">立即购买</button></a>
+	<footer class="checkbox">
+		<input type="checkbox">
+		<span style="">我已同意阅读并同意广告协议<a href="https://www.hdk.net/protocol">《杨柳协议》</a>
+		</span>
+	</footer>
+
+</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="rolldate.min.js"></script>
+<script type="text/javascript">
+	// 时间
+window.onload = function() {
+	new Rolldate({
+		el: '#date-group1-2',
+		format: 'YYYY-MM-DD',	// 格式
+		beginYear: 2000,
+		endYear: 2100,
+		//value: '2017-10-21' //默认时间（2017-10-21 23:52:50 : 
+	})
+	new Rolldate({
+		el: '#date-group1-3',
+		format: 'YYYY-MM-DD',
+	})
+	
+}
+
+// 给input框加选中状态
+	function changepic() {
+	    $("#prompt").css("display", "none");
+	    var reads = new FileReader();
+	    f = document.getElementById('file').files[0];
+	    reads.readAsDataURL(f);
+	    reads.onload = function(e) {
+	        document.getElementById('img').src = this.result;
+	        $("#img").css("display", "block");
+	    };
+	}
+	$(function(){
+		$("#img").click(function(){
+			 $(this).hide();
+			 $("#prompt").css("display", "block");
+		})
+	})
+
+// 切换 输入的电话和网站
+$(function(){
+	$(".Telephone").click(function(){
+		$(".Telephone1").show();
+		$(".linck1").hide();
+	})
+})
+$(function(){
+	$(".linck").click(function(){
+		$(".linck1").show();
+		$(".Telephone1").hide();
+	})
+})
+
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
