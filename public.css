@@ -41,8 +41,8 @@ body{background: #f2f2f2;}
 .h1>h1{display:inline-block;font-size:18px;font-weight:400;margin:24px auto 14px}
 .h1>img{width:18px;vertical-align:text-top;margin-right:4px}
 .btn{margin-top:20px;display:flex;justify-content:space-evenly}
-.btn_left{border:1px solid #649efd;border-radius:25px;line-height:24px;padding:0 16px;color:#649efd;background:none}	/*list-Success.css公用*/
-.btn_right{background:#649efd;color:#fff;border-radius:25px;line-height:24px;padding:0 16px;color:#fff;border:none}		/*list-Success.css公用*/
+.btn_left{border:1px solid #649efd;border-radius:25px;line-height:24px;padding:1px 16px 0px;color:#649efd;background:none}	/*list-Success.css公用*/
+.btn_right{background:#649efd;color:#fff;border-radius:25px;line-height:26px;padding:1px 16px 0px;color:#fff;border:none}		/*list-Success.css公用*/
 
 /*---------list.css 样式--------*/
 
