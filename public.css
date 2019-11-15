@@ -11,7 +11,7 @@ body{background: #f2f2f2;}
 /*------index.css样式--------*/
 .wrap{background: #fff;margin-top:14px;width: 92%;padding: 2%;box-shadow: 0 0 5px 0px rgba(204, 204, 204, 0.4);}
 .products>p,.wrap>p{font-size:14px;line-height:36px;}
-.index_button{background:#649efd;color:#fff;display:block;line-height:32px;width:96%;border-radius:5px;border:none}
+.index_button{background:#649efd;color:#fff;display:block;line-height:36px;width:96%;border-radius:5px;border:none}
 .products{max-width:560px;margin:0 auto;padding-left:4%;position: relative;}
 .list_main>h1,.products>h1{display:table;font-size:18px;font-weight:400;line-height:38px;margin: 38px auto 0px;}
 .form-control[readonly]{background:none;border:1px solid #ccc}
@@ -32,7 +32,7 @@ body{background: #f2f2f2;}
 .index_information{width:95%;height:36px;border:1px solid #dddddd;margin-left:-4%;margin-top:10px;display:none}
 .checkbox{font-size:12px;line-height:46px;text-align:center;margin-left:-4%}
 .checkbox>input{vertical-align:middle;margin-bottom:2px}
-.button_left{height: 26px;position: absolute;top: -25px;left: 10px;background-size: 74%;background-position: 2px 3px;border-radius: 25px;background: #649efd;color: #fff;display: flex;align-items: center;padding: 0 4px;font-size: 14px;}
+.button_left{height: 26px;position: absolute;top: -25px;left: 10px;background-size: 74%;background-position: 2px 3px;border-radius: 25px;background: #649efd;color: #fff;display: flex;align-items: center;padding: 0 4px;font-size: 12px;}
 .button_right{line-height:24px;padding:0px 8px;border-radius:25px;border:1px solid #649efd;position:absolute;top:-25px;right:10px;font-size:12px;color:#fff;background:#649efd}
 
 /*--------Success.css 样式-----------*/
